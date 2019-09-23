@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Outliar</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Custom -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles-3.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Left -->
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- Left -->
+                    <div class="col-md-6 d-flex justify-content-center align-items-center" id="left-wrapper">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <h1 class="text-center" id="brand-slogan-heading"></h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right -->
+                    <div class="col-md-6 d-flex justify-content-center align-items-center" id="right-wrapper">
+                        <!-- Log in -->
+                        <div id="log-in-wrapper">
+                            <div id="log-in-alert" class="alert alert-danger border border-danger mb-5" role="alert">
+                                The email/password you entered does not match our records.
+                            </div>
+                            <h1 class="text-center mb-5">Login</h1>
+                            <div class="d-flex justify-content-center">
+                                <form id="log-in-form" novalidate>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="log-in-email-input">Email</label>
+                                        <input class="form-control" id="log-in-email-input" placeholder="Email" type="email" required>
+                                        <div class="invalid-feedback">
+                                            Please enter a valid email.
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="log-in-password-input">Password</label>
+                                        <input class="form-control" id="log-in-password-input" placeholder="Password" type="password" required>
+                                        <div class="invalid-feedback">
+                                            Please enter a valid password.
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-block btn-custom mb-2" id="log-in-button" type="button">Log in</button>
+                                    <!-- <div class="d-flex justify-content-center mb-5">
+                                        <div class="d-flex align-items-center">
+                                            <span class="mr-1">Don't have an account?</span>
+                                            <button class="btn btn-link p-0" id="sign-up-link" type="button">Sign up</button>
+                                        </div>
+                                    </div> -->
+                                </form>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Sign up
+                <div id="sign-up-wrapper">
+                    <div id="sign-up-alert" class="alert alert-danger border border-danger mb-5" role="alert">
+                        The email you entered is already registered to an account.
+                    </div> -->
+                        <!-- <h1 class="text-center mb-5">Re:tire</h1> -->
+                        <!-- <div class="d-flex justify-content-center">
+                        <form id="sign-up-form" novalidate>
+
+                            <div class="form-group">
+                                <label class="sr-only" for="sign-up-email-input">Email</label>
+                                <input class="form-control" id="sign-up-email-input" placeholder="Email" type="email" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email.
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="sign-up-password-input">Password</label>
+                                <input class="form-control" id="sign-up-password-input" placeholder="Password" type="password" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid password.
+                                </div>
+                            </div>
+                            <button class="btn btn-block btn-custom mb-2" id="sign-up-button" type="button">Sign up</button>
+                            <div class="d-flex justify-content-center mb-5">
+                                <div class="d-flex align-items-center">
+                                    <span class="mr-1">Already have an account?</span>
+                                    <button class="btn btn-link p-0" id="log-in-link" type="button">Log in</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div> -->
+
+
+
+                    </div>
+                    <!-- /.col-XX-XX -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+
+            <!-- Firebase -->
+            <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+            <!-- jQuery -->
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <!-- Popper.js -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <!-- Bootstrap -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            <!-- Custom -->
+            <script>
+                $(() => {
+                    // Initialize Firebase
+                    var config = {
+                        apiKey: "AIzaSyBq7oitzDpulbW4qGXHKeiXgbkRiTWV-48",
+                        authDomain: "outliar-90a12.firebaseapp.com",
+                        databaseURL: "https://outliar-90a12.firebaseio.com",
+                        projectId: "outliar-90a12",
+                        storageBucket: "",
+                        messagingSenderId: "602843796376"
+                    };
+                    firebase.initializeApp(config);
+
+                    // Log in
+                    $("#log-in-button").click(() => {
+                        const form = $("#log-in-form").addClass("was-validated");
+                        if (!form[0].checkValidity()) {
+                            return;
+                        }
+                        const promise = firebase.auth().signInWithEmailAndPassword($("#log-in-email-input").val().trim(), $("#log-in-password-input").val().trim());
+                        console.log($("#log-in-email-input").val().trim());
+                        promise.then(() => {
+                            $("#log-in-alert").hide();
+                        }).catch(error => {
+                            console.log(error.message);
+                            $("#log-in-alert").show();
+                        });
+                    });
+
+                    // // Sign up
+                    // $("#sign-up-button").click(() => {
+                    //     const form = $("#sign-up-form").addClass("was-validated");
+                    //     if (!form[0].checkValidity()) {
+                    //         return;
+                    //     }
+                    //     const promise = firebase.auth().createUserWithEmailAndPassword($("#sign-up-email-input").val().trim(), $("#sign-up-password-input").val().trim());
+                    //     promise.then(() => {
+                    //         $("#sign-up-alert").hide();
+                    //     }).catch(error => {
+                    //         console.log(error.message);
+                    //         $("#sign-up-alert").show();
+                    //     });
+                    // });
+
+                    // Handle authentication state changes
+                    firebase.auth().onAuthStateChanged(user => {
+                        if (user) {
+                            $(location).attr("href", "outliar.html");
+                        }
+                    });
+
+                    // Switch from log in to sign up
+                    // $("#sign-up-link").click(() => {
+                    //     $("#log-in-alert").hide();
+                    //     $("#log-in-wrapper").hide()
+                    //     $("#log-in-form").removeClass("was-validated");
+                    //     $("#log-in-form input").val("");
+                    //     $("#sign-up-wrapper").show();
+                    // });
+
+                    // Switch from sign up to log in
+                    // $("#log-in-link").click(() => {
+                    //     $("#sign-up-alert").hide();
+                    //     $("#sign-up-wrapper").hide();
+                    //     $("#sign-up-form").removeClass("was-validated");
+                    //     $("#sign-up-form input").val("");
+                    //     $("#log-in-wrapper").show();
+                    // });
+                });
+            </script>
+</body>
+
+</html>
