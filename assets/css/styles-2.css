@@ -41,7 +41,7 @@ p {
   line-height: 1.5;
 }
 a {
-  color: #2696C2;
+  color: #2696c2;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -76,8 +76,8 @@ a.btn {
 }
 a.btn-primary,
 .btn-primary {
-  background: #2696C2;
-  border: 2px solid #2696C2;
+  background: #2696c2;
+  border: 2px solid #2696c2;
   color: #fff;
   text-transform: uppercase;
   -webkit-box-shadow: inset 0 0 0 0 #196582;
@@ -107,9 +107,9 @@ a.btn-secondary,
   border: 2px solid #1c1d21;
   color: #fff;
   text-transform: uppercase;
-  -webkit-box-shadow: inset 0 0 0 0 #2696C2;
-  -moz-box-shadow: inset 0 0 0 0 #2696C2;
-  box-shadow: inset 0 0 0 0 #2696C2;
+  -webkit-box-shadow: inset 0 0 0 0 #2696c2;
+  -moz-box-shadow: inset 0 0 0 0 #2696c2;
+  box-shadow: inset 0 0 0 0 #2696c2;
 }
 a.btn-secondary:hover,
 .btn-secondary:hover {
@@ -131,29 +131,29 @@ a.btn-secondary:focus,
 a.btn-ghost-primary,
 .btn-ghost-primary {
   background: none;
-  border: 2px solid #2696C2;
-  color: #2696C2;
-  -webkit-box-shadow: inset 0 0 0 0 #2696C2;
-  -moz-box-shadow: inset 0 0 0 0 #2696C2;
-  box-shadow: inset 0 0 0 0 #2696C2;
+  border: 2px solid #2696c2;
+  color: #2696c2;
+  -webkit-box-shadow: inset 0 0 0 0 #2696c2;
+  -moz-box-shadow: inset 0 0 0 0 #2696c2;
+  box-shadow: inset 0 0 0 0 #2696c2;
   text-transform: uppercase;
 }
 a.btn-ghost-primary:active,
 .btn-ghost-primary:active,
 a.btn-ghost-primary:focus,
 .btn-ghost-primary:focus {
-  border: 2px solid #2696C2;
-  color: #2696C2;
+  border: 2px solid #2696c2;
+  color: #2696c2;
   outline: none;
 }
 a.btn-ghost-primary:hover,
 .btn-ghost-primary:hover {
-  -webkit-box-shadow: inset 0 100px 0 0 #2696C2;
-  -moz-box-shadow: inset 0 100px 0 0 #2696C2;
-  box-shadow: inset 0 100px 0 0 #2696C2;
-  background: #2696C2;
+  -webkit-box-shadow: inset 0 100px 0 0 #2696c2;
+  -moz-box-shadow: inset 0 100px 0 0 #2696c2;
+  box-shadow: inset 0 100px 0 0 #2696c2;
+  background: #2696c2;
   color: #fff;
-  border: 2px solid #2696C2;
+  border: 2px solid #2696c2;
 }
 a.btn-ghost-secondary,
 .btn-ghost-secondary {
@@ -216,11 +216,11 @@ a.btn-cta,
   -moz-box-shadow: none;
   box-shadow: none;
 }
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="submit"],
-input[type="button"],
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='submit'],
+input[type='button'],
 textarea {
   appearance: none;
   /* for mobile safari */
@@ -233,7 +233,7 @@ label {
   margin-bottom: 30px;
 }
 .highlight {
-  color: #2696C2;
+  color: #2696c2;
 }
 #topcontrol {
   -webkit-transition: all 0.4s ease-in-out;
@@ -275,11 +275,11 @@ label {
   padding-bottom: 5px;
 }
 .section-title:after {
-  content: "";
+  content: '';
   display: inline-block;
   height: 4px;
   width: 60px;
-  background: #2696C2;
+  background: #2696c2;
   position: absolute;
   left: 50%;
   bottom: -5px;
@@ -339,7 +339,7 @@ label {
   float: left;
 }
 .navbar-toggle .icon-bar {
-  background-color: #2696C2;
+  background-color: #2696c2;
   height: 3px;
   -webkit-opacity: 0.8;
   -moz-opacity: 0.8;
@@ -377,7 +377,7 @@ label {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer a {
-  color: #2696C2;
+  color: #2696c2;
 }
 .footer a:hover {
   color: #1e7597;
@@ -387,7 +387,7 @@ label {
 }
 /* ======= Promo Section ======= */
 .vegas-timer-progress {
-  background: #2696C2;
+  background: #2696c2;
 }
 .promo-section {
   height: 100%;
@@ -553,21 +553,21 @@ label {
   color: #fff;
 }
 .updates-block .carousel-content .desc a.more-link {
-  color: #2696C2;
+  color: #2696c2;
   vertical-align: middle;
 }
 .updates-block .carousel-content .desc a.more-link:hover {
   color: #1e7597;
 }
 .updates-block .carousel-content .highlight {
-  color: #2696C2;
+  color: #2696c2;
 }
 .countdown-box {
   font-size: 16px;
 }
 .countdown-box .number {
   font-weight: 700;
-  color: #2696C2;
+  color: #2696c2;
   font-size: 24px;
 }
 .countdown-box .unit {
@@ -623,7 +623,7 @@ label {
 }
 .gigs-section .meta-list .fa {
   margin-right: 5px;
-  color: #2696C2;
+  color: #2696c2;
   font-size: 16px;
 }
 .gigs-section .gig-actions {
@@ -676,7 +676,7 @@ label {
   padding-right: 60px;
 }
 .music-section .albums-block .arrow-holder {
-  content: "";
+  content: '';
   display: block;
   width: 0;
   height: 0;
@@ -729,7 +729,7 @@ label {
   position: absolute;
   left: -10px;
   top: 0;
-  background: #2696C2;
+  background: #2696c2;
   color: #fff;
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
@@ -873,7 +873,6 @@ label {
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 15px;
 }
 .merch-section .mask .desc {
   font-size: 16px;
@@ -905,7 +904,7 @@ label {
   color: rgba(255, 255, 255, 0.75);
 }
 .contact-section a:hover {
-  color: #2696C2;
+  color: #2696c2;
 }
 .contact-section .section-title {
   margin-bottom: 30px;
@@ -936,7 +935,7 @@ label {
 }
 .contact-section .contact-block .fa {
   margin-right: 5px;
-  color: #2696C2;
+  color: #2696c2;
   font-size: 24px;
 }
 .contact-section .channels-list {
@@ -1074,7 +1073,7 @@ label {
     box-shadow: none;
   }
   .nav > li.active > a {
-    color: #2696C2;
+    color: #2696c2;
   }
   .promo-section {
     min-height: 900px;
@@ -1314,31 +1313,31 @@ body {
   background: #5bb66f;
 }
 .config-panel #color-options li.theme-2 a {
-  background-color: #2696C2;
+  background-color: #2696c2;
 }
 .config-panel #color-options li.theme-3 a {
-  background-color: #C9091A;
+  background-color: #c9091a;
 }
 .config-panel #color-options li.theme-4 a {
-  background-color: #F2C020;
+  background-color: #f2c020;
 }
 .config-panel #color-options li.theme-5 a {
-  background-color: #0F5EE8;
+  background-color: #0f5ee8;
 }
 .config-panel #color-options li.theme-6 a {
-  background-color: #1DAEB0;
+  background-color: #1daeb0;
 }
 .config-panel #color-options li.theme-7 a {
-  background-color: #6B64AE;
+  background-color: #6b64ae;
 }
 .config-panel #color-options li.theme-8 a {
-  background-color: #EC3A81;
+  background-color: #ec3a81;
 }
 .config-panel #color-options li.theme-9 a {
-  background-color: #C79F7C;
+  background-color: #c79f7c;
 }
 .config-panel #color-options li.theme-10 a {
-  background-color: #AEBB4B;
+  background-color: #aebb4b;
 }
 .config-panel .close {
   position: absolute;
