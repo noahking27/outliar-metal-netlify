@@ -1189,8 +1189,8 @@ label {
   opacity: 1;
 }
 
-.contact-section .social-media-list {
-  margin-bottom: 0;
+.social-media-list {
+  margin-top: 20px;
 }
 
 .contact-section .social-media-list a {
@@ -1210,7 +1210,7 @@ label {
   margin-right: 0;
 }
 
-.contact-section .social-media-list .fa {
+.social-media-list .fa {
   font-size: 36px;
 }
 
