@@ -388,6 +388,37 @@ label {
   background-clip: padding-box;
 }
 
+
+.section-title-merch {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: 800;
+  font-size: 32px;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.section-title-merch:after {
+  content: '';
+  display: inline-block;
+  height: 4px;
+  width: 60px;
+  background: #c9091a;
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  margin-left: -30px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+  border-radius: 1px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
 /* ====== Header ======= */
 
 .header {
